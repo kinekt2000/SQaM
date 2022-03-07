@@ -1,0 +1,28 @@
+<model type="Objects::AMC::Model" name="l4">
+    <node type="Objects::AMC::Top" name="t1"/>
+    <node type="Objects::AMC::Top" name="t2"/>
+    <node type="Objects::AMC::Top" name="t3"/>
+    <node type="Objects::AMC::Top" name="t4"/>
+    <node type="Objects::AMC::Top" name="t5"/>
+    <node type="Objects::AMC::Top" name="t6"/>
+    <node type="Objects::AMC::Top" name="t7"/>
+    <node type="Objects::AMC::Top" name="t8"/>
+    <node type="Objects::AMC::Top" name="t9"/>
+    <node type="Objects::AMC::Top" name="t10"/>
+    <node type="Objects::AMC::Top" name="t11"/>
+    <node type="Objects::AMC::Top" name="t12"/>
+
+    <link type="Objects::AMC::Link" name="14--18" probability="1.0"    intensity="11.556"  deviation="0.0" source="t1"  dest="t2"/>
+    <link type="Objects::AMC::Link" name="18--21" probability="1.0"    intensity="25.331"  deviation="0.0" source="t2"  dest="t3"/>
+    <link type="Objects::AMC::Link" name="21--23" probability="1.0"    intensity="178.043" deviation="0.0" source="t3"  dest="t4"/>
+    <link type="Objects::AMC::Link" name="23--26" probability="1.0"    intensity="1.164"   deviation="0.0" source="t4"  dest="t5"/>
+    <link type="Objects::AMC::Link" name="26--28" probability="1.0"    intensity="1.179"   deviation="0.0" source="t5"  dest="t6"/>
+    <link type="Objects::AMC::Link" name="28--32" probability="1.0"    intensity="2.059"   deviation="0.0" source="t6"  dest="t7"/>
+    <link type="Objects::AMC::Link" name="32--35" probability="1.0"    intensity="4.528"   deviation="0.0" source="t7"  dest="t8"/>
+    <link type="Objects::AMC::Link" name="35--38" probability="1.0"    intensity="17.260"  deviation="0.0" source="t8"  dest="t9"/>
+    <link type="Objects::AMC::Link" name="38--35" probability="0.9946" intensity="1.740"   deviation="0.0" source="t9"  dest="t8"/>
+    <link type="Objects::AMC::Link" name="38--40" probability="0.0054" intensity="8.584"   deviation="0.0" source="t9"  dest="t10"/>
+    <link type="Objects::AMC::Link" name="40--42" probability="1.0"    intensity="2.411"   deviation="0.0" source="t10" dest="t11"/>
+    <link type="Objects::AMC::Link" name="42--28" probability="0.9091" intensity="8.441"   deviation="0.0" source="t11" dest="t6"/>
+    <link type="Objects::AMC::Link" name="42--44" probability="0.0909" intensity="3.151"   deviation="0.0" source="t11" dest="t12"/>
+</model>
