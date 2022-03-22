@@ -12,6 +12,49 @@ double fx(double x) {
     return 1.0/x;
 }
 
+
+double trapezoid(double lower, double upper, double tol) {
+    SAMPLE;
+    double x;
+    int i;
+    double added_sum;
+    
+    SAMPLE;
+    int nseg = 1;
+    double dx = (upper - lower) / nseg;
+
+    SAMPLE;
+    double sum = 0.5 * (fx(lower) + fx(upper));
+
+    SAMPLE;
+    double old_ans = 0.0;
+    double ans = sum * dx;
+
+    SAMPLE;
+    double err_est = fmax(1.0, fabs(tol * ans));
+    while(err_est > fabs(tol * ans)) {
+        SAMPLE;
+        old_ans = ans;
+        dx = (upper - lower) / nseg;
+        x = lower + 0.5 * dx;
+        added_sum = 0.0;
+
+        SAMPLE;
+        for (i = 0; i < nseg; i++) {
+            added_sum += fx(x + i * dx);
+        }
+
+        SAMPLE;
+        sum += added_sum;
+        nseg *= 2;
+        ans = sum * 0.5 * dx;
+        err_est = fabs(old_ans - ans);
+
+        SAMPLE;
+    }
+    return ans
+}
+
 /* numerical integration by the trapezoid method */
 /* function is FX, limits are LOWER and UPPER */
 /* with number of regions equal to PIECES */
@@ -39,8 +82,7 @@ void trapez(double lower, double upper, double tol, double* sum) {
     while (fabs(*sum - sum1) > fabs(tol*(*sum)));
 }
 
-int main(int argc, char **argv) {
-    sampler_init(&argc, argv);
+int main() {
     SAMPLE;
     lower = 1.0;
     upper = 9.0;

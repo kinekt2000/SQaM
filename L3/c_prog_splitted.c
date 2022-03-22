@@ -24,12 +24,15 @@ void trapez(double lower, double upper, double tol, double* sum) {
 
     SAMPLE;
     pieces = 1;
+
     delta_x = (upper - lower)/pieces;
     SAMPLE;
     end_sum = fx(lower) + fx(upper);
+    
     SAMPLE;
     *sum = end_sum * delta_x / 2.0;
     mid_sum = 0.0;
+    
     SAMPLE;
     do {
         SAMPLE;

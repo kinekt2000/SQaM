@@ -1,0 +1,1 @@
+[{"file": "c_prog_mod2.c", "line": 60, "func": "main", "edges": [{"dest": 1, "total-usec": 1762794.0, "total-count": 95, "usec": 18555.726315789474, "count": 1, "attrs": {"avg": 18555.726315789474, "var": 165186365.4040443, "std": 12852.484794935348}}]}, {"file": "c_prog_mod2.c", "line": 64, "func": "main", "edges": []}]
