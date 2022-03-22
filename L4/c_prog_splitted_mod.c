@@ -2,14 +2,22 @@
 #include <stdio.h>
 #include <math.h>
 
+/* integration by the trapezoidal rule */
+
+
 const double tol = 1.0e-6;
 double upper, lower;
 
-double fx(double x)
-{
-    return 1.0 / sqrt(x);
+/* find f(x)=1/x */
+/* watch out for x=0 ! */
+double fx(double x) {
+    return 1.0/x;
 }
 
+/* numerical integration by the trapezoid method */
+/* function is FX, limits are LOWER and UPPER */
+/* with number of regions equal to PIECES */
+/* fixed partition is DELTA_X, answer is SUM */
 double trapez(double lower, double upper, double tol) {
     SAMPLE;
     double x;
@@ -26,14 +34,6 @@ double trapez(double lower, double upper, double tol) {
     double mid_sum = 0.0;
     double sum = end_sum * delta_x / 2.0;
     SAMPLE;
-    // pieces = 1;
-    // delta_x = (upper - lower)/pieces;
-    // SAMPLE;
-    // end_sum = isqrt(lower) + isqrt(upper);
-    // SAMPLE;
-    // *sum = end_sum * delta_x / 2.0;
-    // mid_sum = 0.0;
-    // SAMPLE;
     do {
         SAMPLE;
         pieces = pieces << 1;
@@ -59,9 +59,7 @@ int main(int argc, char **argv) {
     sampler_init(&argc, argv);
     lower = 1.0;
     upper = 9.0;
-    // printf("\n");
     double sum = trapez(lower,upper,tol);
-    // printf("\n");
     // printf("area= %.16e\n", sum);
     return 0;
 }
