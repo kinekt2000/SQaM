@@ -1,0 +1,140 @@
+<Schema>
+  <graf>
+    
+    <Block>
+      <Id>1</Id>
+      <Id2>1</Id2>
+      <failureRate>2.28E-5</failureRate>
+      <name>1</name>
+      <quantity>1</quantity>
+      <list>
+        <int>2</int>
+      </list>
+      <type></type>
+    </Block>
+
+    <Block>
+      <Id>2</Id>
+      <Id2>2</Id2>
+      <failureRate>2.85E-5</failureRate>
+      <name>2</name>
+      <quantity>1</quantity>
+      <list>
+        <int>3</int>
+      </list>
+      <type></type>
+    </Block>
+    
+    <Block>
+      <Id>3</Id>
+      <Id2>3</Id2>
+      <failureRate>4.0E-5</failureRate>
+      <name>3</name>
+      <quantity>1</quantity>
+      <list>
+        <int>4</int>
+      </list>
+      <type></type>
+    </Block>
+
+    <Block>
+      <Id>4</Id>
+      <Id2>4</Id2>
+      <failureRate>3.8E-5</failureRate>
+      <name>4</name>
+      <quantity>1</quantity>
+      <list>
+        <int>5</int>
+        <int>6</int>
+      </list>
+      <type></type>
+    </Block>
+
+    <Block>
+      <Id>5</Id>
+      <Id2>5</Id2>
+      <failureRate>4.0E-5</failureRate>
+      <name>5</name>
+      <quantity>1</quantity>
+      <list>
+        <int>8</int>
+      </list>
+      <type></type>
+    </Block>
+
+    <Block>
+      <Id>6</Id>
+      <Id2>6</Id2>
+      <failureRate>4.0E-5</failureRate>
+      <name>6</name>
+      <quantity>1</quantity>
+      <list>
+        <int>7</int>
+      </list>
+      <type></type>
+    </Block>
+
+    <Block>
+      <Id>7</Id>
+      <Id2>7</Id2>
+      <failureRate>4.0E-5</failureRate>
+      <name>7</name>
+      <quantity>1</quantity>
+      <list>
+        <int>8</int>
+      </list>
+      <type></type>
+    </Block>
+
+    <Block>
+      <Id>8</Id>
+      <Id2>8</Id2>
+      <failureRate>0</failureRate>
+      <name>8</name>
+      <quantity>1</quantity>
+      <list>
+        <int>9</int>
+        <int>10</int>
+      </list>
+      <type></type>
+    </Block>
+
+    <Block>
+      <Id>9</Id>
+      <Id2>9</Id2>
+      <failureRate>2.8E-5</failureRate>
+      <name>9</name>
+      <quantity>1</quantity>
+      <list>
+        <int>11</int>
+      </list>
+      <type></type>
+    </Block>
+
+    <Block>
+      <Id>10</Id>
+      <Id2>10</Id2>
+      <failureRate>2.8E-5</failureRate>
+      <name>10</name>
+      <quantity>1</quantity>
+      <list>
+        <int>11</int>
+      </list>
+      <type></type>
+    </Block>
+
+    <Block>
+      <Id>11</Id>
+      <Id2>11</Id2>
+      <failureRate>0</failureRate>
+      <name>11</name>
+      <quantity>1</quantity>
+      <list />
+      <type></type>
+    </Block>
+  </graf>
+
+  <ListOfFlag />
+  <listOfNode />
+  <list />
+</Schema>
